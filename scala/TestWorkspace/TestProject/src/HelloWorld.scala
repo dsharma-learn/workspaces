@@ -1,0 +1,6 @@
+package HelloWorld
+
+ class scala {
+    
+  }
+}
