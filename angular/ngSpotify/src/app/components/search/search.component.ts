@@ -9,7 +9,7 @@ import {Artist } from '../../models/artist.model';
   templateUrl: `search.component.html`,
 })
 export class SearchComponent  { 
-  searchStr: String;
+  searchStr: string;
   searchRes: Artist[];
 
   constructor (private _spotifyService: SpotifyService) {

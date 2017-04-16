@@ -9,13 +9,12 @@ import { SpotifyService } from "../../services/spotify.service";
 
 @Component({
   moduleId: module.id,  
-  selector: 'artist',
-  templateUrl: `artist.component.html`,
+  selector: 'album',
+  templateUrl: `album.component.html`,
 })
-export class ArtistComponent implements OnInit  {
+export class AlbumComponent implements OnInit  {
    id: string;
-   artist: Artist[];
-   albums: Album [];
+   album: Album [];
 
    constructor ( private _spotifyService: SpotifyService, private _route: ActivatedRoute) {
 
@@ -27,14 +26,10 @@ export class ArtistComponent implements OnInit  {
          .map(params => params ['id'])
          .subscribe ((id) => {
 
-            this._spotifyService.getArtist(id)
-                .subscribe (artist => {
-                    this.artist =artist;
+            this._spotifyService.getAlbum(id)
+                .subscribe (album => {
+                    this.album =album;
                 })
-            this._spotifyService.getAlbums (id)
-                .subscribe (albums => {
-                    this.albums=albums.items;
-                })            
           });
    }
 }
