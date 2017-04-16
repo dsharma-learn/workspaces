@@ -1,0 +1,87 @@
+body {
+  padding: 32px;
+  margin: 32px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.setup, .puzzle {
+  padding:16px;
+  margin-bottom: 32px;
+  
+  h2 {
+    margin: 0;
+    
+  }
+}
+
+.setup {
+  border: 1px solid #ccc;
+  background-color: #eee; 
+}
+
+.puzzle {
+  
+  border: 1px solid red;
+  background-color: #ffdbd6;  
+}
+
+.puzzle.solved {
+  border: 1px solid green;
+  background-color: #ccffda;   
+}
+
+.name {
+  font-weight: bold; 
+}
+
+
+.red {
+  color: red;
+}
+
+
+
+.parent {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  color: blue;
+  padding: 10px;
+}
+
+.child {
+  border: 1px solid black;
+  background-color: #ccc;
+  padding: 10px;
+  color: green;
+}
+
+
+
+.container {
+  padding: 16px;
+  border: 1px solid #ccc;
+  background: #eee;
+  margin-bottom: 32px;
+}
+
+button {
+  padding: 4x 8x;
+  border: 1px sol #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 3px; 
+}
+
+button:not([disabled]) {
+  cursor: pointer;  
+}
+button:not([disabled]):hover {
+  background-color: salmon;
+  color: white;
+  
+}
+
+.highlight {
+  font-weight: bold;
+}

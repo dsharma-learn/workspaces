@@ -1,0 +1,5 @@
+/node_modules
+# Created by .ignore support plugin (hsz.mobi)
+/app
+/dev/**/*.js
+/dev/**/*.js.map
