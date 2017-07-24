@@ -18,13 +18,15 @@ Steps:
 		- do npm init
 	- install express, mongojs (orm to work with mongo), ejs (templates - embedded javascript) and body-parser: 
 		npm install express mongojs ejs body-parser -- save
-	- create server.js and add following
-		var express = require('express')
-		var path = require('path')
-		var bodyParder = require('body-parser')
-		
-		var index = require('/routes/index')
-		
+	- Setup Server:
+        - create server.js defineing view engine, body parser and routes.
+        - create routes and views folders 
+        - in routes, create index.js and todo.js 
+        - start using : node server 
 
 
 
+
+Install bower: npm install bower -g
+Then create .bowerrc and set "directory" to client/bower_components
+Then install bootstrap: bower install bootstrap --save

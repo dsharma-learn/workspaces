@@ -7,3 +7,15 @@
 */*/RemoteSystemsTempFiles/*
 
 */*/*/.settings/*
+matlab/coursera/HW.zip
+python/practice-worspace/.spyproject/*
+python/**/__pycache__/**
+
+r/forecasting-session/.RData
+*.Rhistory
+
+
+scala/**/.sbtserver/**
+scala/**/bin/**
+*.lock
+angular/dstransformer/Genome Transformer.pptx
