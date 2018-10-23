@@ -1,0 +1,173 @@
+
+
+
+
+Prediction --> Regression --> Cross-sectional analaysis --> Regression 
+---------------
+
+- cross section --> data at a point of time, no time dimension 
+
+- scatter plot is between 2 quantitative values e.g. age and weight ->> to understand the relationship between the variables.
+
+Forecasting 
+---------------
+- longitudanal --> timeseries data  
+- data across time diemnsion 
+- movement of variables with time
+
+
+
+Techniques for timeseries forecasting: 
+- Smoothing (non-modelling - no univeral model estimation)
+- Modelling (Box-Jenkins ARIMA model) 
+
+
+- Model --> Equation  (variables + constants/coefficients)
+
+Moving Average (Smoothing) Techniques: 
+- Simple moving average
+	- Equal weightages. 
+- Weighted Moving Average 
+	- how do we assign weight? 
+		- random - trial and error ; build multiple forecast and check with actual 
+		- Basd on historical evidence, take the average of months 
+- Single Exponential Moving Average
+- Double Exponential Moving Average (Holts Winter) --> Includes Level and Trend 
+- Triple Exponential --> includes Seasonality as well 
+
+MAD --> Mean Average Deviation   --> take absolute value of difference and add it up to calculate mean
+MSE --> Mean Square Error  --> Square the difference and add it up to calculate mean
+
+Need to get Less MSE and MAD
+
+
+
+Times series has following components:
+ - level, season and trend components 
+ 
+- We have used smothing on only level components. 
+- So for Double Exponential smoothing technique takes into consideration Trend component as well 
+ 
+ 
+- Forecase = Sum of Level and Trend 
+ 
+ 
+-------------------------------------------------------------------------------------------------------------------
+ 
+- Time Series Decomposition 
+
+Seasonality --> Local fluctuation 
+Cyclical --> Business cycle in a long term 
+ 
+ 
+ 
+--> random component --> Besides seasonal, trend, level  Residual, error, innovation
+  --> No trend is possible in random component
+  --> 
+  
+  
+--> there are 2 types of decomposition --> additive and multiplicative (of components - level, trend, seasonality and random)
+--> If the spikes are also getting increasing, flcutations are becoming more and more. Hence we need to use multiplicative analysis. 
+
+For additive series --> take average and find out difference for the month. 
+For multiplicative --> try toi find the factor --> that will become multiplicative index
+
+
+
+*** Converting multiplicative series into additive --> 
+- use log transformation 
+
+
+-----------------------------------------------------
+
+Till now we have seen smoothing techniques 
+- there was no algebraic equation that could help us in getting to predictive value
+- for this, we need to use modelling technique --> 
+
+
+
+*** Auto-correlation -> when current value (say price of stock), depends on the past value. Future depends on past so use it to forecast future
+*** Random component, error, residual, innovation etc.. --> actual minus forecast 
+
+** Auto-regression --? when I am trying to regress my dependent variables using past values of same variables
+
+*** independent varliables:
+	- Own past values --> Auto Regression
+	- Past innovation --> Moving Average (requires moving average of the error) 
+	
+	ARMA --> Auto Regressive Moving Average --> Combination of above 2 
+	
+	ARIMA -->> BOX-JENKIS --> Auto Regressive INTEGRATED Moving Average
+
+--> Modelling--> No auto-correlation be left 
+--> 
+
+
+----------------------------------------------------------------------------------------------------------------------------
+Stationarity -->
+
+- Constant mean
+- constant variance 
+
+- to test if series is stationary or not --> Dicky fuller (??). Based on statistical test  (ADF, PP, KPSS) 
+- ACF will be between -1 to +1 
+- for 0 lag it will be 1
+- high auto correlation --> there is a trend in the series 
+- 	
+
+
+** Null hypothesis 
+-- 
+
+Univaraiate = > 
+
+How many variable variables you are predicting --? 
+Multivariate --> Predict more than one variable 
+
+--> for Multi --> Vector ARMA 
+
+
+
+stats
+tsearies
+forecast 
+TTR
+quantmod
+strucchange
+
+
+
+
+
+
+
+
+
+==============================================================================
+
+Risks 
+ - Systematic  - e.g. demonetization 
+ - Non-systematic/Idiosyncratic Risk  - e.g change in management of company. So only 
+ 
+ - whenever idiosynchratic risk can be avoided by portofio diversification. 
+ - Systematic cant be mitigated 
+ 
+ 
+ Rf - Returns - Risk freee 
+ Ra - Returns - Risk for asset class
+ Rm - 
+ b (beta) = (Ra - Rf)/(Ra - Rm)
+ 
+ b is Cov(m,a)/var(m)
+
+ b is the measure of flucuation of (measure of sensitivity of asset to the market ) 
+ 
+ 
+ if b is high, risk will be high. 
+ 
+ - CAPM - Capital Asset Pricing Model: 
+ 
+ 
+ - when asset is correlated to market, risk for asset is similar to market risk. 
+ 
+ 

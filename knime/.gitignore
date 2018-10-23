@@ -1,0 +1,11 @@
+.metadata/*
+*/*/.metadata/*
+Example Workflows/*
+
+*/*/*/bin/*.class
+
+.DS_Store
+
+*/*/RemoteSystemsTempFiles/*
+
+*/*/*/.settings/*

@@ -1,0 +1,283 @@
+{
+    "jsonname": "ruleengine.json",
+    "programname": "ruleengine",
+    "createdate": "2017-04-10T03:52:38.079Z",
+    "numrules": 10,
+    "rulelist": [
+        {
+            "rulename": "isInt",
+            "numparams": 1,
+            "parmanames": "param1",
+            "rulecreatedate": "2017-04-10T03:52:38.079Z",
+            "ruletype": "validation",
+            "ruleformat": "NA",
+            "ruleoutput": "boolean",
+            "rulefunction": "isInt(param1)",
+            "ruledesc": "to check whether the parameter is integer"
+        },
+        {
+            "rulename": "isDecimal",
+            "numparams": 1,
+            "parmanames": "param1",
+            "rulecreatedate": "2017-04-10T03:52:38.079Z",
+            "ruletype": "validation",
+            "ruleformat": "NA",
+            "ruleoutput": "boolean",
+            "rulefunction": "isDecimal(param1)",
+            "ruledesc": "to check whether the parameter is decimal"
+        },
+        {
+            "rulename": "isAlpha",
+            "numparams": 1,
+            "parmanames": "param1",
+            "rulecreatedate": "2017-04-10T03:52:38.080Z",
+            "ruletype": "validation",
+            "ruleformat": "NA",
+            "ruleoutput": "boolean",
+            "rulefunction": "isAlpha(param1)",
+            "ruledesc": "to check whether the parameter is string only"
+        },
+        {
+            "rulename": "isAlNum",
+            "numparams": 1,
+            "parmanames": "param1",
+            "rulecreatedate": "2017-04-10T03:52:38.080Z",
+            "ruletype": "validation",
+            "ruleformat": "NA",
+            "ruleoutput": "boolean",
+            "rulefunction": "isAlNum(param1)",
+            "ruledesc": "to check whether the parameter is alpha numeric"
+        },
+        {
+            "rulename": "isNull",
+            "numparams": 1,
+            "parmanames": "param1",
+            "rulecreatedate": "2017-04-10T03:52:38.080Z",
+            "ruletype": "validation",
+            "ruleformat": "NA",
+            "ruleoutput": "boolean",
+            "rulefunction": "isNull(param1)",
+            "ruledesc": "to check whether the parameter is null"
+        },
+        {
+            "rulename": "isNotNull",
+            "numparams": 1,
+            "parmanames": "param1",
+            "rulecreatedate": "2017-04-10T03:52:38.080Z",
+            "ruletype": "validation",
+            "ruleformat": "NA",
+            "ruleoutput": "boolean",
+            "rulefunction": "isNotNull(param1)",
+            "ruledesc": "to check whether the parameter is not null"
+        },
+        {
+            "rulename": "isDate",
+            "numparams": 1,
+            "parmanames": "param1",
+            "rulecreatedate": "2017-04-10T03:52:38.081Z",
+            "ruletype": "validation",
+            "ruleformat": "NA",
+            "ruleoutput": "boolean",
+            "rulefunction": "isDate(param1)",
+            "ruledesc": "to check whether the parameter is a date"
+        },
+        {
+            "rulename": "isValidFormat",
+            "numparams": 2,
+            "parmanames": "param1",
+            "rulecreatedate": "2017-04-10T03:52:38.081Z",
+            "ruletype": "validation",
+            "ruleformat": "param2",
+            "ruleoutput": "boolean",
+            "rulefunction": "isValidFormat(param1,param2(format))",
+            "ruledesc": "to check whether the parameter is of valid param2 format"
+        },
+        {
+            "rulename": "subString",
+            "numparams": 3,
+            "parmanames": "param1(string),param2(start position),param3(length)",
+            "rulecreatedate": "2017-04-10T03:52:38.081Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "string",
+            "rulefunction": "subString(param1,param2,param3))",
+            "ruledesc": "Returns substring of a string"
+        },
+        {
+            "rulename": "leftString",
+            "numparams": 2,
+            "parmanames": "param1(string),param2(length)",
+            "rulecreatedate": "2017-04-10T03:52:38.081Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "string",
+            "rulefunction": "leftString(param1,param2)",
+            "ruledesc": "Returns substring from begining of a string"
+        },
+        {
+            "rulename": "rightString",
+            "numparams": 2,
+            "parmanames": "param1(attribute),param2(length)",
+            "rulecreatedate": "2017-04-10T03:52:38.081Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "string",
+            "rulefunction": "rightString(param1,param2)",
+            "ruledesc": "Returns substring from begining of a string"
+        },
+        {
+            "rulename": "length",
+            "numparams": 1,
+            "parmanames": "param1(attribute)",
+            "rulecreatedate": "2017-04-10T03:52:38.082Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "number",
+            "rulefunction": "length(param1)",
+            "ruledesc": "Returns length of a string"
+        },
+        {
+            "rulename": "position",
+            "numparams": 2,
+            "parmanames": "param1(attribute), param2(string)",
+            "rulecreatedate": "2017-04-10T03:52:38.082Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "number",
+            "rulefunction": "position(param1,param2)",
+            "ruledesc": "Returns position of char/string in a string"
+        },
+        {
+            "rulename": "concat",
+            "numparams": 2,
+            "parmanames": "param1(string), param2(string)...paramN(string)",
+            "rulecreatedate": "2017-04-10T03:52:38.082Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "string",
+            "rulefunction": "concat(param1,param2,...,paramN)",
+            "ruledesc": "Concatenation of two or more strings"
+        },
+        {
+            "rulename": "ceil",
+            "numparams": 1,
+            "parmanames": "param1(decimal)",
+            "rulecreatedate": "2017-04-10T03:52:38.082Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "integer",
+            "rulefunction": "ceil(param1)",
+            "ruledesc": "Least succeeding integer of input param"
+        },
+        {
+            "rulename": "floor",
+            "numparams": 1,
+            "parmanames": "param1(decimal)",
+            "rulecreatedate": "2017-04-10T03:52:38.082Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "integer",
+            "rulefunction": "floor(param1)",
+            "ruledesc": "Greatest preceding integer of input param"
+        },
+        {
+            "rulename": "max",
+            "numparams": 2,
+            "parmanames": "param1(integer/decimal), param2(integer/decimal)",
+            "rulecreatedate": "2017-04-10T03:52:38.083Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "integer/decimal",
+            "rulefunction": "max(param1,param2)",
+            "ruledesc": "Maximum value between two input params"
+        },
+        {
+            "rulename": "min",
+            "numparams": 2,
+            "parmanames": "param1(integer/decimal), param2(integer/decimal)",
+            "rulecreatedate": "2017-04-10T03:52:38.083Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "integer/decimal",
+            "rulefunction": "min(param1,param2)",
+            "ruledesc": "Minimum value between two input params"
+        },
+        {
+            "rulename": "mod",
+            "numparams": 2,
+            "parmanames": "param1(dividend), param2(divisor)",
+            "rulecreatedate": "2017-04-10T03:52:38.083Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "integer/decimal",
+            "rulefunction": "mod(param1,param2)",
+            "ruledesc": "Returns Remainder of two params"
+        },
+        {
+            "rulename": "sqrt",
+            "numparams": 1,
+            "parmanames": "param1(int/decimal)",
+            "rulecreatedate": "2017-04-10T03:52:38.083Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "integer/decimal",
+            "rulefunction": "sqrt(param1)",
+            "ruledesc": "Returns square root of input param"
+        },
+        {
+            "rulename": "random",
+            "numparams": 1,
+            "parmanames": "param1(integer)",
+            "rulecreatedate": "2017-04-10T03:52:38.084Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "integer",
+            "rulefunction": "random(param1)",
+            "ruledesc": "Returns random number from 0 to param1 value"
+        },
+        {
+            "rulename": "setToNull",
+            "numparams": 0,
+            "parmanames": "NA",
+            "rulecreatedate": "2017-04-10T03:52:38.084Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "NA",
+            "rulefunction": "seToNull()",
+            "ruledesc": "Returns no value"
+        },
+        {
+            "rulename": "stringToNumber",
+            "numparams": 1,
+            "parmanames": "param1(string)",
+            "rulecreatedate": "2017-04-10T03:52:38.084Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "integer",
+            "rulefunction": "stringToNumber(param1)",
+            "ruledesc": "Converts string to integer"
+        },
+        {
+            "rulename": "stringToDecimal",
+            "numparams": 1,
+            "parmanames": "param1(string)",
+            "rulecreatedate": "2017-04-10T03:52:38.085Z",
+            "ruletype": "transformation",
+            "ruleformat": "NA",
+            "ruleoutput": "decimal",
+            "rulefunction": "stringToDecimal(param1)",
+            "ruledesc": "Converts string to decimal"
+        },
+        {
+            "rulename": "stringToDate",
+            "numparams": 1,
+            "parmanames": "param1(string)",
+            "rulecreatedate": "2017-04-10T03:52:38.085Z",
+            "ruletype": "transformation",
+            "ruleformat": "param2(%dd-%mm-%yyyy)",
+            "ruleoutput": "integer",
+            "rulefunction": "stringToDate(param1,param2(date format))",
+            "ruledesc": "Converts string to date based on format"
+        }
+    ]
+}

@@ -37,4 +37,4 @@ export class SpotifyService{
             .map(res => res.json());
     }
     
-}
+}   
