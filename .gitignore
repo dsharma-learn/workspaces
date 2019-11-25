@@ -7,10 +7,9 @@
 */*/RemoteSystemsTempFiles/*
 
 */*/*/.settings/*
-<<<<<<< HEAD
 matlib/.MATLABDriveAppData/**
 workspaces/matlib/forShru.zip
-=======
+
 matlab/coursera/HW.zip
 python/practice-worspace/.spyproject/*
 python/**/__pycache__/**
@@ -23,6 +22,19 @@ scala/**/.sbtserver/**
 scala/**/bin/**
 *.lock
 angular/dstransformer/Genome Transformer.pptx
->>>>>>> 0f9734446377c8b96954e28a60bccbfe1c4f4514
+
 matlib/coursera.zip
 matlab/forShru.zip
+
+python/**/.idea
+
+python/practice-worspace/machine-learning(techwithtim.net)/.idea/inspectionProfiles/profiles_settings.xml
+python/practice-worspace/machine-learning(techwithtim.net)/.idea/machine-learning(techwithtim.net).iml
+python/practice-worspace/machine-learning(techwithtim.net)/.idea/misc.xml
+python/practice-worspace/machine-learning(techwithtim.net)/.idea/modules.xml
+python/practice-worspace/machine-learning(techwithtim.net)/.idea/vcs.xml
+python/practice-worspace/machine-learning(techwithtim.net)/.idea/inspectionProfiles/profiles_settings.xml
+python/practice-worspace/machine-learning(techwithtim.net)/.idea/machine-learning(techwithtim.net).iml
+python/practice-worspace/machine-learning(techwithtim.net)/.idea/misc.xml
+python/practice-worspace/machine-learning(techwithtim.net)/.idea/modules.xml
+python/practice-worspace/machine-learning(techwithtim.net)/.idea/vcs.xml
